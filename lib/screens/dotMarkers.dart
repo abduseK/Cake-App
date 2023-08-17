@@ -1,6 +1,5 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class DotMarkers extends StatelessWidget {
   final bool isActive;

@@ -20,16 +20,17 @@ class _OnBoardScreenState extends State<OnBoardScreen> {
     OnBaord(
         title: "Custom your cake",
         image: "images/ill1.png",
-        description: "Custom your cake as you like, whenever you want"),
+        description:
+            "Custom your cake as you like, whenever you want \n from bread to topping, Everything"),
     OnBaord(
         title: "Order from your home",
         image: "images/ill2.png",
         description: "Order your cake from your home... fast"),
     OnBaord(
         title: "Easy to use",
-        image: "images/ill1.png",
+        image: "images/ill3.png",
         description:
-            "Simple and easy to use \n and manage your orders and your account"),
+            "Simple and easy to use. Manage your \n orders and your account"),
   ];
 
   @override
@@ -58,6 +59,7 @@ class _OnBoardScreenState extends State<OnBoardScreen> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
           body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -80,7 +82,7 @@ class _OnBoardScreenState extends State<OnBoardScreen> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(bottom: 80.0),
+            padding: const EdgeInsets.only(bottom: 100.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

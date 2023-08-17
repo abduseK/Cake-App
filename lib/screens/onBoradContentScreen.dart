@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_onte/constants/constants.dart';
 
 class OnBoardContentScreen extends StatelessWidget {
   final String title;
@@ -20,7 +21,7 @@ class OnBoardContentScreen extends StatelessWidget {
           title,
           style: const TextStyle(
               fontSize: 25.0,
-              color: Color.fromARGB(222, 4, 102, 178),
+              color: kPrimaryColor,
               fontFamily: "BebasNeue-Regular"),
         ),
         const SizedBox(
@@ -28,8 +29,7 @@ class OnBoardContentScreen extends StatelessWidget {
         ),
         Text(
           description,
-          style: const TextStyle(
-              fontSize: 15.0, color: Color.fromARGB(255, 119, 115, 115)),
+          style: const TextStyle(fontSize: 15.0, color: kPrimaryColor),
           textAlign: TextAlign.center,
         )
       ],

@@ -1,8 +1,10 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:test_onte/screens/homeScreen.dart';
 import 'package:test_onte/screens/onBoradContentScreen.dart';
 import '../models/onBaord.dart';
 import "./dotMarkers.dart";
+import "../constants//constants.dart";
 
 class OnBoardScreen extends StatefulWidget {
   const OnBoardScreen({super.key});
@@ -25,7 +27,8 @@ class _OnBoardScreenState extends State<OnBoardScreen> {
     OnBaord(
         title: "Order from your home",
         image: "images/ill2.png",
-        description: "Order your cake from your home... fast"),
+        description:
+            "Wanna eat some cake while you're on your couch? \n Order your favorite cake from your home"),
     OnBaord(
         title: "Easy to use",
         image: "images/ill3.png",
@@ -117,18 +120,23 @@ class _OnBoardScreenState extends State<OnBoardScreen> {
                         child: const Text(
                           "Get Started",
                           style: TextStyle(
-                            color: Color.fromARGB(222, 4, 102, 178),
+                            color: kPrimaryColor,
                             fontFamily: "BebasNeue-Regular",
                             fontSize: 20,
                           ),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => HomeScreen()));
+                        },
                       )
                     : TextButton(
                         child: const Text(
                           "Next",
                           style: TextStyle(
-                              color: Color.fromARGB(222, 4, 102, 178),
+                              color: kPrimaryColor,
                               fontFamily: "BebasNeue-Regular",
                               fontSize: 17),
                         ),

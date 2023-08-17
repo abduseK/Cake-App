@@ -31,7 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
             onSelected: (value) {
               if (value == 1) {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Settings()));
+                    MaterialPageRoute(builder: (context) => const Settings()));
               }
             },
           )

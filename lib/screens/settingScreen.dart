@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:test_onte/constants/constants.dart';
-
 import '../widgets/settingCardWidget.dart';
 
 class Settings extends StatefulWidget {

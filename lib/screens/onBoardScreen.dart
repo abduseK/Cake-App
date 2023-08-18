@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:test_onte/screens/homeScreen.dart';
-import 'package:test_onte/screens/onBoradContentScreen.dart';
+import 'package:test_onte/widgets/onBoradContentScreen.dart';
 import '../models/onBaord.dart';
 import "./dotMarkers.dart";
 import "../constants//constants.dart";

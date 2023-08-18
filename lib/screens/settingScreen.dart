@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:test_onte/constants/constants.dart';
 
+import '../widgets/settingCardWidget.dart';
+
 class Settings extends StatefulWidget {
   const Settings({super.key});
 
@@ -145,29 +147,6 @@ class _SettingsState extends State<Settings> {
               ),
             ],
           ),
-        ),
-      ),
-    );
-  }
-}
-
-class SettingCardWidget extends StatelessWidget {
-  final String settingTitle;
-  final Icon icon;
-
-  SettingCardWidget({required this.settingTitle, required this.icon});
-
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      color: Colors.white,
-      elevation: 0.5,
-      child: ListTile(
-        leading: icon,
-        iconColor: Colors.black,
-        title: Text(
-          settingTitle,
-          style: const TextStyle(color: Colors.grey),
         ),
       ),
     );

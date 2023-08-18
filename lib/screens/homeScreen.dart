@@ -29,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
         currentIndex: currentIndex,
         showUnselectedLabels: false,
         unselectedItemColor: Colors.black.withOpacity(0.5),
-        selectedItemColor: Colors.brown,
+        selectedItemColor: kPrimaryColor,
         showSelectedLabels: false,
         elevation: 0,
         backgroundColor: Colors.white,
@@ -39,14 +39,6 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(
               icon: Icon(Icons.settings), label: 'Settings'),
         ],
-      ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.brown,
-        onPressed: () {},
-        child: const Text(
-          "Order",
-          style: TextStyle(fontFamily: "PTSerif-Regular"),
-        ),
       ),
     );
   }
